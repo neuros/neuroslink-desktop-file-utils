@@ -1,4 +1,4 @@
-desktop-file-utils (0.15-1neuros0) intrepid; urgency=low
+desktop-file-utils (0.15-2neuros0) intrepid; urgency=low
 
   * debian/defaults.list:
     - change all references of totem to smplayer. Shame on
