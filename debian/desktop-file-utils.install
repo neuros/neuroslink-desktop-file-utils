@@ -1,0 +1,2 @@
+debian/defaults.list /etc/gnome
+debian/desktop-file-validate /etc/bash_completion.d

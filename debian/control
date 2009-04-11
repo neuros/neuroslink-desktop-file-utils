@@ -1,0 +1,23 @@
+Source: desktop-file-utils
+Section: devel
+Priority: optional
+Maintainer: Ubuntu Desktop Team <ubuntu-desktop@lists.ubuntu.com>
+XSBC-Original-Maintainer: Ross Burton <ross@debian.org>
+Uploaders: Ondřej Surý <ondrej@debian.org>,
+           Loic Minier <lool@dooz.org>
+Build-Depends: debhelper (>= 5),
+               cdbs,
+               gnome-pkg-tools,
+               autotools-dev,
+               libpopt-dev (>>1.5),
+               libglib2.0-dev (>= 2.2.0)
+Standards-Version: 3.7.3
+
+Package: desktop-file-utils
+Architecture: any
+Depends: ${shlibs:Depends}
+Description: Utilities for .desktop files
+ Some utilities to make dealing with .desktop files easier:
+  * update-desktop-database -- update the desktop-MIME mapping
+  * desktop-file-validate -- validate a desktop file
+  * desktop-file-install -- install a desktop file, munging en route.

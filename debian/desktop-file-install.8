@@ -1,0 +1,62 @@
+.TH DESKTOP-FILE-INSTALL 8
+.SH NAME
+desktop-file-install \- install a desktop file to the applications directory
+.SH SYNOPSIS
+.B desktop-file-install
+.I "[options] file"
+.SH "DESCRIPTION"
+.B desktop-file-install
+installs a specified .desktop file to the applications directory,
+optionally munging it a bit in transit.
+.SH OPTIONS
+.TP
+\fB \-\-dir \fIpath\fP
+Specify the directory where files should be installed.
+.TP
+\fB \-\-vendor \fIvendor\fP
+Add a vendor prefix to the desktop file. If the file already has this
+prefix, nothing happens.
+.TP
+\fB \-\-add\-category \fIcategory\fP
+Add a category to the \fBCategories\fP field.
+.TP
+\fB \-\-remove\-category \fIcategory\fP
+Remove a category from the \fBCategories\fP field.
+.TP
+\fB \-\-add\-only\-show\-in \fIproduct\fP
+Add a product name to the \fBOnlyShowIn\fP field.
+.TP
+\fB \-\-remove\-only\-show\-in \fIproduct\fP
+Remove a product name from the \fBOnlyShowIn\fP field.
+.TP
+\fB \-\-delete\-original
+Delete the source desktop file, leaving only the target
+file. Effectively "renames" a desktop file.
+.TP
+\fB \-m, \-\-mode \fImode\fP
+Set the given permissions on the destination file.
+.TP
+\fB \-\-copy\-name\-to\-generic\-name
+Copy the contents of the \fBName\fP field to the \fBGenericName\fP
+field.
+.TP
+\fB \-\-copy\-generic\-name\-to\-name
+Copy the contents of the \fBGenericName\fP field to the \fBName\fP
+field.
+.TP
+\fB \-\-remove\-key \fIkey\fP
+Remove a specific key from the desktop file.
+.TP
+.B \-h, \-\-help
+Show summary of options.
+.TP
+.B \-\-usage
+Display brief usage message.
+.TP
+.B \-v, \-\-version
+Show version of program.
+.SH "SEE ALSO"
+The Free Desktop .desktop file specification at www.freedesktop.org.
+.SH AUTHOR
+This manual page was written by Ross Burton <ross@burtonini.com>, for
+the Debian GNU/Linux system (but may be used by others).

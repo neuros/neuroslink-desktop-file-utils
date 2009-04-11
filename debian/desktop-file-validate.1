@@ -1,0 +1,22 @@
+.TH DESKTOP-FILE-VALIDATE 1
+.SH NAME
+desktop-file-validate \- validate a .desktop file
+.SH SYNOPSIS
+.B desktop-file-validate
+.I "file"
+.SH "DESCRIPTION"
+.BR desktop-file-validate
+is a tool to validate .desktop files to the Free Desktop specification
+at http://www.freedesktop.org/. It will list any errors if the file
+does not match the specification, and warnings if the file uses
+deprecated features.
+.SH OPTIONS
+.TP
+\fB \-\-warn\-kde\fP
+Warn about usage of KDE extensions to the specification.
+.TP
+\fB \-\-no\-warn\-deprecated\fP
+Do not warn about usage of deprecated items.
+.SH AUTHOR
+This manual page was written by Ross Burton <ross@debian.org>, for the
+Debian GNU/Linux system (but may be used by others).
